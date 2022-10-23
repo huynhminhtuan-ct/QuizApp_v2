@@ -11,7 +11,7 @@
         android:id="@+id/textView11"
         android:layout_width="363dp"
         android:layout_height="66dp"
-        android:layout_marginTop="408dp"
+        android:layout_marginTop="324dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Hey, Congratulations!"
@@ -19,7 +19,7 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +27,7 @@
         android:id="@+id/textView12"
         android:layout_width="363dp"
         android:layout_height="66dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="388dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="DEMO"
@@ -35,14 +35,15 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="363dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="536dp"
+        android:layout_width="365dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="452dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Your Score is 0 out of 3"
@@ -50,6 +51,7 @@
         android:textColorHint="#C3C0C0"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +59,7 @@
         android:id="@+id/imageView2"
         android:layout_width="310dp"
         android:layout_height="219dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,28 +70,28 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="28dp"
         android:text="Result"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="366dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/error"
-        android:hapticFeedbackEnabled="true"
+        android:id="@+id/button4"
+        android:layout_width="362dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#FFFFFF"
         android:text="FINISH"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 </androidx.constraintlayout.widget.ConstraintLayout>
