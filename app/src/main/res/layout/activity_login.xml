@@ -24,7 +24,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="347dp"
         android:layout_height="245dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/box_login"
 
         app:cardCornerRadius="20dp"
@@ -62,22 +62,19 @@
             tools:layout_editor_absoluteY="220dp" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textLayount"
+            android:id="@+id/outlinedTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="100dp"
             android:layout_marginRight="20dp"
-            android:gravity="center"
-            >
+            android:hint="Name">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textCapWords"
-                android:hint="Name"
-                android:background="@color/white"
-                />
+                android:layout_height="wrap_content" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -89,8 +86,8 @@
             android:layout_marginTop="80dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:text="Start"
-            android:onClick="start"/>
+            android:onClick="start"
+            android:text="Start" />
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
