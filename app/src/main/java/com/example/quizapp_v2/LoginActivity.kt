@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
+import com.google.android.material.textfield.TextInputLayout
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,8 +14,18 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun start(view: View) {
-        var intent = Intent(this,MainActivity::class.java)
-        startActivity(intent);
-        finish();
+        //
+        var outlinedTextField: TextInputLayout = findViewById(R.id.outlinedTextField)
+        var userName: TextView? = findViewById(R.id.userName)
+        if(userName?.text.toString()?.trim()?.compareTo("")==0){
+            outlinedTextField.setError("Name cannot be left blank");
+        }
+        else{
+            outlinedTextField.setError(null);
+            var intent = Intent(this,MainActivity::class.java)
+            startActivity(intent);
+            finish();
+        }
+
     }
 }
