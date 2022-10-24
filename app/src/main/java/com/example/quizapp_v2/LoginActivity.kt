@@ -3,6 +3,7 @@ package com.example.quizapp_v2
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.SyncStateContract.Constants
 import android.view.View
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputLayout
@@ -23,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
         else{
             outlinedTextField.setError(null);
             var intent = Intent(this,MainActivity::class.java)
+            intent.putExtra(Constants.ACCOUNT_NAME,userName?.text.toString()?.trim())
             startActivity(intent);
             finish();
         }
